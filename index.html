@@ -20,10 +20,11 @@
                 <li><a href="">SERVICES</a></li>
                 <li><a href="">CONTACT</a></li>
             </ul>
+            <img src="images/moon.png" id="icon">
         </nav>
 
         <div class="info">
-            <h1>I'm <span>Alvin</span>, and welcome</h1>
+            <h1>I'm <span>Alvin</span> Taas</h1>
             <p>This website will serve as a compository of the projects I have <br>been working on</p>
             <a href="">Download CV</a>
         </div>
@@ -39,6 +40,21 @@
             <a href=""><i class="fa-brands fa-dribbble"></i></a>
         </div>
     </div>
+
+    <script>
+
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "images/sun.png";
+            } else {
+                icon.src = "images/moon.png";
+            }
+        }
+
+    </script>
 
 </body>
 
